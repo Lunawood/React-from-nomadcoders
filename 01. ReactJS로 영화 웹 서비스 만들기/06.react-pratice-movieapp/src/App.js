@@ -8,8 +8,8 @@ function App() {
     // react-router-dom@6 을 썼고 Switch(v5) 대신 Routes와 element을 사용
     <Router >
       <Routes >
+        <Route path="/movie/:id" element={<Detail />} />
         <Route path="/" element={<Home />} />
-        <Route path="/movie" element={<Detail />} />
       </ Routes >
     </Router>
   );
